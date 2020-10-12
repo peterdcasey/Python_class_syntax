@@ -1,6 +1,7 @@
 from class_examples import Examples
 """
     Small example using class syntax...
+    ....
 """
 
 def main():
