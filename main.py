@@ -1,8 +1,10 @@
 from class_examples import Examples
+
 """
     Small example using class syntax...
     ....
 """
+
 
 def main():
     print("hello from main")
@@ -18,8 +20,6 @@ def main():
     x.static_method()
     x.class_method()
     print(f"x: {str(x)}")
-
-
 
 
 if __name__ == '__main__':
