@@ -7,12 +7,18 @@ from class_examples import Examples
 
 
 def main():
-    print("hello from main")
+    print("hello from main!")
     x = Examples(99)
     y = Examples(-1)
     print(f"x: {str(x)}")
     print(f"y: {str(y)}")
-    Examples.shared = 33
+    x.class_method()
+    x.new_field = 0
+    print(f"x: {x}, x.new_field: {x.new_field}")
+    # print(f"y: {y}, x.new_field: {y.new_field}")
+    Examples.shared = 33  # Not access the class variable __shared, what?????
+    print(f"Examples.shared is: {Examples.shared}")
+    print(f"x now has a class field 'shared': {x.shared}")
     z = Examples(345)
     del z
     print(f"y: {str(y)}")

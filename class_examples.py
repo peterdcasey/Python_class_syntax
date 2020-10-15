@@ -8,7 +8,7 @@ class Examples:
     def __str__(self):
         return f"shared is {Examples.__shared}, self.value is {self.value}"
 
-    # Example using 'this' rather than 'self'
+    # Example using 'this' rather than 'self'  Python programmers use 'self'
     # noinspection PyMethodParameters
     def __del__(this):
         """ Destructor example """
@@ -26,7 +26,7 @@ class Examples:
         cls.__shared = 333
 
     @staticmethod
-    def static_method():
+    def static_method():  # () not instance (self), not class (cls)
         """
           A normal function scoped to the class
         :return:
